@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1><strong>Você é estrangeiro ?</strong></h1>
+    <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="Verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular(){
+            var txtp = window.document.querySelector ('input#txtp')
+            var res = window.document.querySelector ('div#res')
+            var vel = txtp(txtp.value)
+            res.innerHTML = `<p>Você é brasileiro </p>`
+
+            if (vel >'Brasil') {
+                res.innerHTML += `<p>Você é estrangeiro</p>`
+            }
+
+
+                
+        }
+    </script>
+
+</body>
+</html>
